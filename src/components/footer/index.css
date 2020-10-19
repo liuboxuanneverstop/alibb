@@ -1,0 +1,71 @@
+.food_box {
+    width:1180px;
+    height:300px;
+    margin:32px auto; 
+  }
+  .new_worke {
+    float: left;
+    width:850px;
+    height:300px;
+    overflow: hidden;
+  }
+  .alibaba {
+    width:310px;
+    height:300px;
+    float: right;
+  }
+  .more-positon {
+      height: 49px;
+      border-bottom: 1px solid rgba(31,56,88,0.06);
+      line-height: 49px;
+      padding: 0 14px;
+      /* opacity: 0.8; */
+      background: white;
+      font-size: 14px;
+      color: #000000;
+      position: relative;
+      z-index: 2;
+  }
+  .clickMorePosition {
+    float: right;
+    font-size: 14px;
+    color: rgba(31,56,88,0.60);
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .neworke_a_box {
+    float: left;
+    width: 350px;
+  }
+  .address_box {
+    float: left;
+    margin-left: 90px;
+    font-style: normal;
+    color: #ccc;
+  }
+  .time_box {
+    float: right;
+    font-style: normal;
+    color: #ccc;
+  }
+  .show-pic {
+    display: block;
+    cursor: pointer;
+    height: 140px;
+    background: #FFFFFF;
+    box-shadow: 0 0 15px 0 rgba(31,56,88,0.08);
+    border-radius: 3px;
+    position: relative;
+  }
+  .pic-1 {
+    margin-bottom: 20px;
+  }
+  .index-footer {
+    background-color: #282c34;
+    height: 44px;
+    line-height: 44px;
+  }
+  .footer-content {
+    color: #fff;
+    opacity: 0.4;
+  }
