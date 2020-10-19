@@ -68,10 +68,31 @@ export default class Footer extends Component {
           "https://job.alibaba.com/zhaopin/PositionDetail.htm?positionCode=GP651014",
       },
     ],
+    mymarginTop: 0
   };
   error = (item) => {
     message.error(item + "服务暂未开放", 0.5);
   };
+  
+    //计时器执行
+    indexChange(){
+      if(this.state.mymarginTop == (this.state.newWorke.length-5) * 40){
+          this.setState({
+            mymarginTop:0
+          })
+      }else{
+          // this.state.index++;
+          this.setState({
+            mymarginTop:this.state.mymarginTop+ 40
+          })
+          console.log(this.state.mymarginTop);
+      }
+  }
+  componentDidMount(){
+    setInterval(()=>{
+        this.indexChange();
+    },1000)
+}
   render() {
     return (
       <div>
@@ -93,7 +114,7 @@ export default class Footer extends Component {
                 }}
               >
                 {this.state.newWorke.map((item, index) => (
-                  <li key={index}>
+                  <li key={index} style={{marginTop: -this.state.mymarginTop}}>
                     <a
                       href={item.url}
                       style={{ textDecoration: "none", color: "#3c99d8" }}
